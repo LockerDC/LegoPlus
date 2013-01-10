@@ -1,0 +1,100 @@
+@charset "utf-8";
+/* CSS Document */
+/* ----------------------- GLOBAL --------------------------- */
+section {
+	width:900px;
+	padding:10px;
+	margin:0 auto;
+}
+
+body {
+	margin:0px; padding:0px;
+	background-color:#99dbf4;
+}
+
+#main {
+	background-color:#99dbf4;
+}
+
+/* ------------------------ HEADER ------------------------- */
+header {
+	background:url(images/header_bg.png) repeat-x;
+	-moz-box-shadow: 0 0 20px; /* Для Firefox */
+    -webkit-box-shadow: 0 0 20px; /* Для Safari и Chrome */
+    box-shadow: 0 0 20px; /* Параметры тени */
+	height:50px;
+}
+#logo {
+	position:absolute;
+	left:50px;
+	background-image:url(images/Logo.png);
+	background-repeat:no-repeat;
+	width:250px;
+	height:83px;
+}
+
+/* ----------------- MENU --------------- */
+menu {
+	margin:0px; padding:0px;
+	position:absolute;
+	right:100px;
+	top:10px;
+}
+menu li {
+	display:inline;
+	margin-left:12px;
+}
+menu li a {
+	text-decoration:none;
+	color:#716d6a;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+menu li a.active, menu li a:hover {
+	color:#211e1e;
+}
+
+/* ----------------- CONTENT --------------------- */
+#page1 { 
+	height:650px; 
+}
+	#page1 img { 
+		position:absolute; 
+		top:650px; 
+		left:50%;
+	}
+
+#page2 { 
+	background-color:#FFF; 
+	height:650px; 
+}
+	#page2 img { 
+		position:absolute; 
+		top:1300px; 
+		left:50%; 
+	}
+	
+#page3 { 
+	height:650px;
+}
+	#page3 img { 
+		position:absolute;
+		top:1950px; 
+		left:50%; 
+	}
+	
+#page4 { 
+	background-color:#FFF; 
+	height:650px;
+}
+
+/* --------------------- FOOTER ------------------------ */
+footer {
+	height:100px;
+	background-image:url(images/footer_bg.png);
+	color:white;
+}
+
+ 

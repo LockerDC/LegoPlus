@@ -1,0 +1,74 @@
+@charset "utf-8";
+/* CSS Document */
+/* ----------------------- GLOBAL --------------------------- */
+
+body {
+	margin:0px; padding:0px;
+	background-color:#99dbf4;
+}
+
+#main {
+	background-color:#99dbf4;
+}
+
+/* ------------------------ HEADER ------------------------- */
+header {
+	background:url(images/header_bg.png) repeat-x;
+	-moz-box-shadow: 0 0 20px; /* Для Firefox */
+    -webkit-box-shadow: 0 0 20px; /* Для Safari и Chrome */
+    box-shadow: 0 0 20px; /* Параметры тени */
+	height:50px;
+}
+#logo {
+	position:absolute;
+	left:50px;
+	background-image:url(images/Logo.png);
+	background-repeat:no-repeat;
+	width:250px;
+	height:83px;
+}
+
+/* ----------------- MENU --------------- */
+menu {
+	margin:0px; padding:0px;
+	position:absolute;
+	right:100px;
+	top:10px;
+}
+menu li {
+	display:inline;
+	margin-left:12px;
+}
+menu li a {
+	text-decoration:none;
+	color:#716d6a;
+	font-family:Verdana, Arial, Helvetica, sans-serif;
+	font-size:10px;
+	font-weight:bold;
+	text-transform:uppercase;
+}
+menu li a.active, menu li a:hover {
+	color:#211e1e;
+}
+
+/* ----------------- CONTENT --------------------- */
+
+section {
+	background-color:#FFFFFF;
+	width:900px;
+	height:1200px;
+	padding:10px;
+	margin:0 auto;
+	margin-top:20px;
+	-moz-box-shadow: 0 0 10px; /* Для Firefox */
+    -webkit-box-shadow: 0 0 10px; /* Для Safari и Chrome */
+    box-shadow: 0 0 10px; /* Параметры тени */
+}
+
+/* --------------------- FOOTER ------------------------ */
+footer {
+	height:100px;
+	color:white;
+}
+
+ 

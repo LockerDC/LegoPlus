@@ -1,0 +1,32 @@
+{page}
+
+<?php 
+$lg = new Lego();
+$auth = $lg->auth();
+$lvl = $lg->get_level($auth);
+if($lvl<4)
+	echo 'Закрыто!<br>';
+	
+else
+{
+	if(!isset($_GET['act']))
+	{
+		echo '<a href="?act=new_mod">Обновить модули</a><br>';
+	}
+	switch($_GET['act'])
+	{
+		case 'new_mod':
+			$lg->new_mod();
+			$lg->check_mod();
+			echo 'Модули обновлены';
+		break;
+		
+	}
+}
+?>
+
+{/}
+
+{title}
+AdminPanel
+{/}

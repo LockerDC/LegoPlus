@@ -1,0 +1,45 @@
+<?php
+if(isset($_GET['act']) && $_GET['act'] == 'exit')
+{
+	session_destroy();
+	header("Location: index");
+}
+?>
+{title}
+Вход!
+{/}
+
+{menu}
+                	<li><a href="index">Главная</a></li>
+                    <li><a href="news">Новости</a></li>
+                    <li><a href="echo">Отзывы</a></li>
+                    <li><a href="enter">Вход</a></li><br>
+{/}
+{page}
+<?php
+	$lg = new Lego();
+if($lg->auth())
+	echo '<br><a href="?act=exit">Выход</a>';
+	if(isset($_GET['login']))
+	{
+		if($lg->auth($_GET['login'], $_GET['pass']))
+		{
+			echo 'Вы успешно авторизированы!';
+		}
+		else
+		{
+			echo 'Провал авторизации!<br>';
+		}
+	}
+	else
+	{
+	echo '
+	<form action="/main/enter" method="GET">
+		Логин
+		<input type="text" name="login"><br>
+		Pass <input type="text" name="pass"><br>
+		<input type="submit"><br>
+		</form>';
+	}
+?>
+{/}

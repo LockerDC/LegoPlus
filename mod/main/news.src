@@ -1,0 +1,14 @@
+{title}
+Новости!
+{/}
+
+{menu}
+                	<li><a href="index">Главная</a></li>
+                    <li><a href="news">Новости</a></li>
+                    <li><a href="echo">Отзывы</a></li>
+                    <li><a href="enter">Вход</a></li>
+{/}
+
+{page}
+А это новости!
+{/}

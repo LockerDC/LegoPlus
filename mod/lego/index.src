@@ -1,0 +1,11 @@
+<?php header("Location: /main/index"); ?>
+{menu}
+                	<li><a href="/main/index">Главная</a></li>
+                    <li><a href="/main/">Новости</a></li>
+                    <li><a href="/main/">Отзывы</a></li>
+                    <li><a href="/main/">Вход</a></li>
+{/}
+
+{page}
+Это главная, сучки!
+{/}
